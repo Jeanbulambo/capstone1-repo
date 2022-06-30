@@ -20,6 +20,8 @@ window.addEventListener('resize', () => {
   }
 });
 
+// end with menu and start and start with speakers
+
 const splis = [{
   imageLink: './images/Coco.png',
   title: 'Coco Brown',
@@ -63,9 +65,8 @@ const splis = [{
 }];
 
 const cardContainer = document.querySelector('.fs');
-
 const speakers = () => {
-  // eslint-disable-next-line no-plusplus
+// eslint-disable-next-line no-plusplus
   for (let i = 0; i < splis.length; i++) {
     cardContainer.innerHTML += `<div class="speakers">
       <img id="speaker1" class="speak-img" src="${splis[i].imageLink}" alt="${splis[i].title}">
